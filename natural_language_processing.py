@@ -17,7 +17,12 @@ from nltk.stem.porter import PorterStemmer
 result = []
 for i in range(len(dataset)):
     review = re.sub('[^a-zA-Z]',' ',dataset['Review'][i])
-    review = review.lower()
+    # def remove_html_tags(text):
+    #"""Remove html tags from a string"""
+    #import re
+    #clean = re.compile('<.*?>')
+    #return re.sub(clean, '', text)
+    #review = review.lower()
 
     review = review.split() # to list
     ps = PorterStemmer()
