@@ -51,4 +51,4 @@ y_pred = classifier.predict(X_test)
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test,y_pred)
 acc = (cm[0][0]+cm[1][1]) / 200
-(55+91) / 200
+(55+91) / 200 
