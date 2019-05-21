@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 20 20:21:25 2019
-
-@author: user
-"""
-
 import os
 import numpy as np
 import cv2
@@ -62,13 +55,13 @@ while video_capture.isOpened():
     if not success:
         break
     
-    rgb_image = frame[:, :, ::-1]
+    rgb_image = frame[:, :, ::-1] #opencv used BGR, changed to RGB then
     #model run
     results = model.detect([rgb_image],verbose=0)
     #results[0],results[1]
     r = results[0]
 
-    # columns' decription
+    # columns' description
     # - r['rois'] are the bounding box of each detected object
     # - r['class_ids'] are the class id (type) of each detected object
     # - r['scores'] are the confidence scores for each detection
