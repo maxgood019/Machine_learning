@@ -44,7 +44,7 @@ if not os.path.exists(COCO_MODEL_PATH):
 #image 
 IMAGE_dir = os.path.join(Root_dir,"images")
 
-video_source = os.path.join(Root_dir,"test/91117.t.mp4")
+video_source = os.path.join(Root_dir,"test/91118.mp4")
 
 #create M-RCNN
 model = MaskRCNN(mode="inference",model_dir=Model_dir,
