@@ -1,3 +1,2 @@
-# Craw Taiwanese TSE Trading Exchange Data
-Data:
-http://www.tse.com.tw/zh/page/trading/exchange/STOCK_DAY.html
+# Craw Taiwanese TSE Trading Exchange Data (TSE Trading)
+# Craw Taiwan Lottery Number (TW_Lottery)
